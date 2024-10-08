@@ -9,36 +9,25 @@ form {
   text-align: center;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"] {
-  height: 20px;
-  padding: 8px;
-}
-p {
-  font-size: 18px;
+p * {
+  display: block;
 }
 
-/* input:invalid {
-  border: 2px solid red;
+input[type="email"] {
+  appearance: none;
 }
 
-input:invalid:required {
-  background-color: blue;
-} */
-
-.active {
-  border: 1px solid red;
+.error {
   background-color: lightcoral;
-  height: 40px;
   display: flex;
   align-items: center;
-  padding: 6px;
+  padding: 0;
   margin-top: 6px;
+  box-sizing: border-box;
 }
 
-.error-email {
-  border: 1px solid red;
+.error.active {
+  padding: 0.3em;
 }
 
 button {

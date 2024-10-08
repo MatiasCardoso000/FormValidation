@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 const email = document.getElementById("email");
-const emailError = document.querySelector("#email + span.error");
+const emailError = document.querySelector(".error");
 
 email.addEventListener("input", () => {
   if (email.validity.valid) {
@@ -11,10 +11,10 @@ email.addEventListener("input", () => {
   }
 });
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (event) => {
   if (!email.validity.valid) {
     showError();
-    e.preventDefault();
+    event.preventDefault();
   }
 });
 
@@ -26,5 +26,4 @@ function showError() {
   }
 
   emailError.className = "error active";
-  email.className = "error-email";
 }
