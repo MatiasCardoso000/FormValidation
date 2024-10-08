@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  height: 20px;
+  padding: 8px;
+}
+p {
+  font-size: 18px;
+}
+
+/* input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid:required {
+  background-color: blue;
+} */
+
+.active {
+  border: 1px solid red;
+  background-color: lightcoral;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  margin-top: 6px;
+}
+
+.error-email {
+  border: 1px solid red;
+}
+
+button {
+  margin-top: 6px;
+}
